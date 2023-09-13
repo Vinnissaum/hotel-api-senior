@@ -15,7 +15,6 @@ public class CheckInMapper {
         entity.setId(dto.getId());
         entity.setArrivalAt(dto.getArrivalAt());
         entity.setLeftAt(dto.getLeftAt());
-        entity.setGuest(guestMapper.toEntity(dto.getGuest()));
 
         return entity;
     }
@@ -25,7 +24,7 @@ public class CheckInMapper {
         dto.setId(entity.getId());
         dto.setArrivalAt(entity.getArrivalAt());
         dto.setLeftAt(entity.getLeftAt());
-        dto.setGuest(guestMapper.toDTO(entity.getGuest()));
+        dto.setGuestId(entity.getGuest().getId());
 
         return dto;
     }
