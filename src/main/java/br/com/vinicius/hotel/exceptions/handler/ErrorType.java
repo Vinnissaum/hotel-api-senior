@@ -15,7 +15,7 @@ enum ErrorType {
 
     ErrorType(String path, String title) {
         this.title = title;
-        this.uri = "https://tinnova-vehicles" + path;
+        this.uri = "https://senior-teste" + path;
     }
 
 }
