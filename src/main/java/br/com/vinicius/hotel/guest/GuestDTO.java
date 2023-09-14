@@ -3,6 +3,7 @@ package br.com.vinicius.hotel.guest;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 @Data
@@ -11,6 +12,7 @@ public class GuestDTO {
 
     private UUID id;
 
+    @NotBlank(message = "Name is required")
     private String name;
 
     private String document;
