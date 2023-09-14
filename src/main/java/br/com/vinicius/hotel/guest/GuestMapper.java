@@ -9,6 +9,7 @@ public class GuestMapper {
         Guest entity = new Guest();
         entity.setId(dto.getId());
         entity.setName(dto.getName());
+        entity.setDocument(dto.getDocument());
         entity.setPhone(dto.getPhone());
 
         return entity;
@@ -18,6 +19,7 @@ public class GuestMapper {
         GuestDTO dto = new GuestDTO();
         dto.setId(entity.getId());
         dto.setName(entity.getName());
+        dto.setDocument(entity.getDocument());
         dto.setPhone(entity.getPhone());
 
         return dto;

@@ -24,5 +24,7 @@ public class Guest {
     @Column(nullable = false)
     private String name;
 
+    private String document;
+
     private String phone;
 }

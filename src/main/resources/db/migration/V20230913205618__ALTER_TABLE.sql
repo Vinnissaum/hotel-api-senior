@@ -1,0 +1,1 @@
+ALTER TABLE guest ADD COLUMN document VARCHAR(11);
