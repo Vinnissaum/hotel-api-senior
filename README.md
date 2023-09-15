@@ -74,7 +74,7 @@ GET /checkIns/getInactive
 ```
 - #### Realiza o Check-in informando o hóspede
 ```http
-POST /checkIns/getInactive
+POST /checkIns
 ```
 - #### Realiza o Checkout informando ID do Check-in
 ```http
