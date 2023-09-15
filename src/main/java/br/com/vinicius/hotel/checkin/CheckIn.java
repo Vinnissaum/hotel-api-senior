@@ -3,6 +3,7 @@ package br.com.vinicius.hotel.checkin;
 import br.com.vinicius.hotel.guest.Guest;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -21,6 +22,7 @@ public class CheckIn {
     @Column(name = "id", updatable = false)
     private UUID id;
 
+    @CreationTimestamp
     @Column(nullable = false,  columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private LocalDateTime arrivalAt;
 
@@ -30,5 +32,7 @@ public class CheckIn {
     @ManyToOne
     @JoinColumn(name = "guest_id")
     private Guest guest;
+
+    private Boolean vehicleAdditionalCost = false;
 
 }
