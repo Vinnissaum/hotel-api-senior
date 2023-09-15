@@ -1,0 +1,1 @@
+ALTER TABLE checkin ADD COLUMN vehicle_additional_cost BOOLEAN DEFAULT FALSE;
